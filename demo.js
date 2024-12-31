@@ -51,3 +51,42 @@ console.log(factorialOfNumber(4)) // 24
 console.log(factorialOfNumber(5)) // 120
 
 
+// find if prime or not
+function isPrime(num) {
+    // Check if input is a number and a positive integer
+    if (typeof num !== 'number' || num < 2 || !Number.isInteger(num)) {
+        return `${num} is not a valid input for checking prime numbers. Please enter a positive integer greater than 1.`;
+    }
+
+    // Check if the number is divisible by any number between 2 and its square root
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return `${num} is not a prime number.`;
+        }
+    }
+
+    return `${num} is a prime number.`;
+}
+
+console.log(isPrime(29));  // 29 is a prime number
+console.log(isPrime(-3));  // -3 is not a valid input for checking prime numbers. Please enter a positive integer greater than 1.
+console.log(isPrime(0));   // 0 is not a valid input for checking prime numbers. Please enter a positive integer greater than 1.
+console.log(isPrime(1));   // 1 is not a valid input for checking prime numbers. Please enter a positive integer greater than 1.
+console.log(isPrime(4));   // 4 is not a prime number.
+
+
+function isPrime1(num) {
+    if (typeof num !== 'number' || num < 2 || !Number.isInteger(num)) {
+        return `${num} is not a valid input for checking prime numbers. Please enter a positive integer greater than 1.`;
+    }
+
+    let count = 0
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return "not a prime number"
+        }
+    }
+    return `${num} is a prime number `
+}
+
+console.log(isPrime1(-5)) 
