@@ -227,3 +227,41 @@ console.log(leanerSerachIndex(arr, 1))     // 0
 console.log(leanerSerachIndex(arr, 12))    // 1
 console.log(leanerSerachIndex(arr, 20))    // 4
 console.log(leanerSerachIndex(arr, 13))    // -1
+
+// Do binary seach with sorted array
+
+const sortArr = [11, 12, 14, 19, 26, 29]
+
+// function findIndex(arr, target) {
+
+// }
+
+// function binarySearch(arr, start, end) {
+
+//     let start = 0;
+//     let end = arr.length - 1
+
+//     const mid = Math.floor((end - start) / 2)
+
+//     while (start <= end) {
+
+
+
+//         if (start > end) {
+//             return -1
+//         }
+//         if (target === arr[mid]) {
+//             return mid
+//         } else if (target < arr[mid]) {
+//             binarySearch(arr, start, mid - 1)
+//         } else {
+//             binarySearch(arr, mid + 1, end)
+//         }
+//     }
+// }
+
+
+// console.log(binarySearch((sortArr, 11))     // 0
+// console.log(binarySearch((sortArr, 14))    // 1
+// console.log(binarySearch((sortArr, 19))    // 4
+// console.log(binarySearch((sortArr, 13))    // -1
