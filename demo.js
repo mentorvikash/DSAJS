@@ -138,7 +138,9 @@ function powerOfTwo(n) {
     return `2 to the power ${count} is equal to ${n}`
 }
 
+// O(logn)
 console.log(powerOfTwo(64)) // 2 to the power 6 is equal to 64
+
 
 // find if given number is a power of 2 number
 
@@ -149,6 +151,7 @@ function powerOfTwoBitWise(n) {
     return (n & (n - 1)) === 0
 }
 
+// O(1)
 
 console.log(powerOfTwoBitWise(1)) // true 
 console.log(powerOfTwoBitWise(2)) // true
@@ -174,6 +177,8 @@ function fibonachiWithRecurstion(n) {
 
     return fibonachiWithRecurstion(n - 1) + fibonachiWithRecurstion(n - 2)
 }
+
+// O(n^n)
 
 console.log(fibonachiWithRecurstion(1))  // 0
 console.log(fibonachiWithRecurstion(2))  // 1
