@@ -158,3 +158,35 @@ console.log(powerOfTwoBitWise(5)) // false
 
 
 
+//  nth fibonachi number using recursion
+
+// get the nth fibonachi number
+
+function fibonachiWithRecurstion(n) {
+
+    if (n < 1) {
+        return "n shoud be a positive integer"
+    }
+
+    if (n <= 2) {
+        if (n === 1) {
+            return 0
+        } else if (n === 2) {
+            return 1
+        }
+    }
+
+    return fibonachiWithRecurstion(n - 1) + fibonachiWithRecurstion(n - 2)
+
+}
+
+console.log(fibonachiWithRecurstion(1))  // 0
+console.log(fibonachiWithRecurstion(2))  // 1
+console.log(fibonachiWithRecurstion(3))  // 1
+console.log(fibonachiWithRecurstion(4))  // 2
+console.log(fibonachiWithRecurstion(10))  // 34
+console.log(fibonachiWithRecurstion(15))  // 377 
+console.log(fibonachiWithRecurstion(20))  // 4181
+
+
+
