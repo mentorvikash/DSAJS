@@ -189,4 +189,17 @@ console.log(fibonachiWithRecurstion(15))  // 377
 console.log(fibonachiWithRecurstion(20))  // 4181
 
 
+// find factorial by recursion
+function factorialByRecurstion(n) {
+    if (n === 1) {
+        return 1
+    }
+    return n * factorialByRecurstion(n - 1)
+}
+
+console.log(factorialByRecurstion(1)) // 1
+console.log(factorialByRecurstion(2)) // 2
+console.log(factorialByRecurstion(5)) // 120
+console.log(factorialByRecurstion(10)) // 3628800
+console.log(factorialByRecurstion(15)) // 1307674368000
 
