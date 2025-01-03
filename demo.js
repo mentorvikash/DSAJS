@@ -201,9 +201,29 @@ function factorialByRecurstion(n) {
     return n * factorialByRecurstion(n - 1)
 }
 
+// O(n)
+
 console.log(factorialByRecurstion(1)) // 1
 console.log(factorialByRecurstion(2)) // 2
 console.log(factorialByRecurstion(5)) // 120
 console.log(factorialByRecurstion(10)) // 3628800
 console.log(factorialByRecurstion(15)) // 1307674368000
 
+// Linear Search 
+function leanerSerachIndex(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            return i
+        }
+    }
+    return -1
+}
+
+// O(n)
+
+const arr = [1, 12, 15, 19, 20, 27]
+
+console.log(leanerSerachIndex(arr, 1))     // 0 
+console.log(leanerSerachIndex(arr, 12))    // 1
+console.log(leanerSerachIndex(arr, 20))    // 4
+console.log(leanerSerachIndex(arr, 13))    // -1
