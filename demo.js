@@ -89,4 +89,72 @@ function isPrime1(num) {
     return `${num} is a prime number `
 }
 
-console.log(isPrime1(-5)) 
+console.log(isPrime1(-5))
+
+// create a program to the power of 2 of any number
+
+function powerOfTwo(n) {
+    let result = n;
+    let count = 0;
+
+    if (n < 1) {
+        return "enter a valid number"
+    }
+
+    while (result > 1) {
+        if (result % 2 !== 0) {
+            return "the give value do not power of 2"
+        } else {
+            result = (result / 2);
+            count++;
+        }
+    }
+
+    return `2 to the power ${count} is equal to ${n}`
+}
+
+console.log(powerOfTwo(64))  // 
+
+
+// create a program to the power of 2 of any number
+
+function powerOfTwo(n) {
+    let result = n;
+    let count = 0;
+
+    if (n < 1) {
+        return "enter a valid number"
+    }
+
+    while (result > 1) {
+        if (result % 2 !== 0) {
+            return "the give value do not power of 2"
+        } else {
+            result = (result / 2);
+            count++;
+        }
+    }
+
+    return `2 to the power ${count} is equal to ${n}`
+}
+
+console.log(powerOfTwo(64)) // 2 to the power 6 is equal to 64
+
+// find if given number is a power of 2 number
+
+function powerOfTwoBitWise(n) {
+    if (n < 1) {
+        return false;
+    }
+    return (n & (n - 1)) === 0
+}
+
+
+console.log(powerOfTwoBitWise(1)) // true 
+console.log(powerOfTwoBitWise(2)) // true
+console.log(powerOfTwoBitWise(3)) // false
+console.log(powerOfTwoBitWise(4)) // true
+console.log(powerOfTwoBitWise(5)) // false
+
+
+
