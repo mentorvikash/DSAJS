@@ -191,11 +191,11 @@ console.log(fibonachiWithRecurstion(20))  // 4181
 
 // find factorial by recursion
 function factorialByRecurstion(n) {
-    if (n < 1) {
+    if (n < 0) {
         console.log("value of n should be positive number")
         return null
     }
-    if (n === 1) {
+    if (n === 0) {
         return 1
     }
     return n * factorialByRecurstion(n - 1)
