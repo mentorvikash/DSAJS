@@ -164,20 +164,15 @@ console.log(powerOfTwoBitWise(5)) // false
 
 function fibonachiWithRecurstion(n) {
 
-    if (n < 1) {
+    if (n < 0) {
         return "n shoud be a positive integer"
     }
 
-    if (n <= 2) {
-        if (n === 1) {
-            return 0
-        } else if (n === 2) {
-            return 1
-        }
+    if (n < 2) {
+        return n
     }
 
     return fibonachiWithRecurstion(n - 1) + fibonachiWithRecurstion(n - 2)
-
 }
 
 console.log(fibonachiWithRecurstion(1))  // 0
